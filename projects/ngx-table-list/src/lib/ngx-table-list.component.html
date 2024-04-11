@@ -1,0 +1,25 @@
+<div class="ngx-table-list-content">
+  <!-- HEADER -->
+  <div class="ngx-table-list-header">
+    <div *ngFor="let field of fields">
+      {{ field.label }}
+    </div>
+
+    <!-- ACTIONS HEADER -->
+    <div>Acciones</div>
+  </div>
+
+  <!-- BODY -->
+  <div *ngFor="let item of data" class="ngx-table-list-item">
+    <div
+      *ngFor="let field of fields"
+      class="ngx-table-list-column"
+      [innerHtml]="item[field.attr]"
+    ></div>
+
+    <!-- ACTIONS -->
+    <div class="ngx-table-list-actions">
+
+    </div>
+  </div>
+</div>

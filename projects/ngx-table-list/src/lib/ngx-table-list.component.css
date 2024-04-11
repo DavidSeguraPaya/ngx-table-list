@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:host {
+  --bck-primary-50: #fcfcfc;
+  --bck-primary-100: #efefef;
+  --bck-primary-200: #dcdcdc;
+  --bck-primary-300: #bdbdbd;
+  --bck-primary-400: #989898;
+  --bck-primary-500: #7c7c7c;
+  --bck-primary-600: #656565;
+  --bck-primary-700: #525252;
+  --bck-primary-800: #464646;
+  --bck-primary-900: #3d3d3d;
+  --bck-primary-950: #292929;
+  --num-columns: 1;
+}
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: .9rem;
+}
+.ngx-table-list-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ngx-table-list-header {
+  display: grid;
+  grid-template-columns: repeat(var(--num-columns), 1fr);
+  border-radius: 3px;
+  padding: 1rem 1.2rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.ngx-table-list-item {
+  display: grid;
+  grid-template-columns: repeat(var(--num-columns), 1fr);
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 1rem 1.2rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.ngx-table-list-item:hover {
+  background-color: var(--bck-primary-100);
+}
